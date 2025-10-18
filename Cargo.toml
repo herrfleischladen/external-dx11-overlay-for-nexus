@@ -13,7 +13,7 @@ crate-type = ["cdylib", "rlib"]
 default = []
 
 [dependencies]
-nexus = { git = "https://github.com/zerthox/nexus-rs", features = ["log", "log_filter"] }
+nexus = { git = "https://github.com/zerthox/nexus-rs", features = ["log"] }
 external-dx11-overlay = { git = "https://github.com/SorryQuick/external-dx11-overlay", features = ["for_nexus"] }
 
 [dependencies.windows]

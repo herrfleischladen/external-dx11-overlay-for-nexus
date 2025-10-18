@@ -21,6 +21,5 @@ nexus::export! {
     unload: unload_wrapper,
     flags: nexus::AddonFlags::DisableHotloading,
     provider: nexus::UpdateProvider::GitHub,
-    update_link: "https://github.com/herrfleischladen/external-dx11-overlay-for-nexus",
-    log_filter: "trace"
+    update_link: "https://github.com/herrfleischladen/external-dx11-overlay-for-nexus"
 }
