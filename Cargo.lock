@@ -3,15 +3,6 @@
 version = 4
 
 [[package]]
-name = "aho-corasick"
-version = "1.1.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8e60d3430d3a69478ad0993f19238d2df97c507009a52b3c10addcd7f6bcb916"
-dependencies = [
- "memchr",
-]
-
-[[package]]
 name = "allocator-api2"
 version = "0.2.21"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -113,16 +104,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "773648b94d0e5d620f64f280777445740e61fe701025087ec8b57f45c791888b"
 
 [[package]]
-name = "env_filter"
-version = "0.1.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1bf3c259d255ca70051b30e2e95b5446cdb8949ac4cd22c0d7fd634d89f568e2"
-dependencies = [
- "log",
- "regex",
-]
-
-[[package]]
 name = "equivalent"
 version = "1.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -131,6 +112,7 @@ checksum = "877a4ace8713b0bcf2a4e7eec82529c029f1d0619886d18145fea96c3ffe5c0f"
 [[package]]
 name = "external-dx11-overlay"
 version = "0.1.1"
+source = "git+https://github.com/SorryQuick/external-dx11-overlay#17ce85e75321311a2d61691964f80ab99af15837"
 dependencies = [
  "chrono",
  "fern",
@@ -142,7 +124,7 @@ dependencies = [
 
 [[package]]
 name = "external-dx11-overlay-for-nexus"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "external-dx11-overlay",
  "nexus",
@@ -323,7 +305,6 @@ source = "git+https://github.com/zerthox/nexus-rs#6219ce63654b719b6e4ca22af55679
 dependencies = [
  "arcdps-imgui",
  "bitflags 2.9.4",
- "env_filter",
  "log",
  "nexus_codegen",
  "num_enum",
@@ -337,7 +318,6 @@ version = "0.3.1"
 source = "git+https://github.com/zerthox/nexus-rs#6219ce63654b719b6e4ca22af5567917bbee46fc"
 dependencies = [
  "cfg-if",
- "env_filter",
  "paste",
  "proc-macro2",
  "quote",
@@ -447,35 +427,6 @@ checksum = "fb5a58c1855b4b6819d59012155603f0b22ad30cad752600aadfcb695265519a"
 dependencies = [
  "bitflags 1.3.2",
 ]
-
-[[package]]
-name = "regex"
-version = "1.12.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "843bc0191f75f3e22651ae5f1e72939ab2f72a4bc30fa80a066bd66edefc24d4"
-dependencies = [
- "aho-corasick",
- "memchr",
- "regex-automata",
- "regex-syntax",
-]
-
-[[package]]
-name = "regex-automata"
-version = "0.4.13"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5276caf25ac86c8d810222b3dbb938e512c55c6831a10f3e6ed1c93b84041f1c"
-dependencies = [
- "aho-corasick",
- "memchr",
- "regex-syntax",
-]
-
-[[package]]
-name = "regex-syntax"
-version = "0.8.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7a2d987857b319362043e95f5353c0535c1f58eec5336fdfcf626430af7def58"
 
 [[package]]
 name = "region"

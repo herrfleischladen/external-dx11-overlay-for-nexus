@@ -1,12 +1,7 @@
-use windows::Win32::{
-    Foundation::HINSTANCE,
-    System::LibraryLoader::GetModuleHandleW
-};
-
-fn get_hinstance() -> HINSTANCE { unsafe { GetModuleHandleW(None).unwrap().into() } }
+mod olibot;
 
 fn load_wrapper() {
-    let hinstance = get_hinstance();
+    let hinstance = olibot::get_hinstance();
     external_dx11_overlay::attach(hinstance);
 }
 
