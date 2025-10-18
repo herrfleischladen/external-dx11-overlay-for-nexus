@@ -124,7 +124,7 @@ dependencies = [
 
 [[package]]
 name = "external-dx11-overlay-for-nexus"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "external-dx11-overlay",
  "nexus",
