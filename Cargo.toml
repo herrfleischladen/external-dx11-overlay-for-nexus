@@ -1,6 +1,6 @@
 [package]
 name = "external-dx11-overlay-for-nexus"
-version = "0.1.0-POC"
+version = "0.1.1-POC"
 edition = "2024"
 authors = ["SorryQuick", "0l1b0t", "herrfleischladen"]
 
