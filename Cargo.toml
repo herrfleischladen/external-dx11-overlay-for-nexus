@@ -1,6 +1,6 @@
 [package]
 name = "external-dx11-overlay-for-nexus"
-version = "0.1.2"
+version = "0.1.3+1.1c5f863e37bd3edc87393407755ff033c1351204"
 edition = "2024"
 authors = ["SorryQuick", "0l1b0t", "herrfleischladen"]
 
@@ -13,7 +13,7 @@ crate-type = ["cdylib", "rlib"]
 default = []
 
 [dependencies]
-nexus = { git = "https://github.com/zerthox/nexus-rs", features = ["log"] }
+nexus = { git = "https://github.com/zerthox/nexus-rs" }
 external-dx11-overlay = { git = "https://github.com/SorryQuick/external-dx11-overlay", features = ["for_nexus"] }
 
 [dependencies.windows]
